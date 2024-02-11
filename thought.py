@@ -28,7 +28,7 @@ class Thought(QWidget):
 
         self.text_area = QTextEdit()
         self.text_area.setBaseSize(300, 300)
-        self.text_area.setStyleSheet("background-color: black; border-style: solid; border-width:1px; border-radius:50px; border-color: red;")
+        self.text_area.setStyleSheet("background-color: black; border-style: solid; border-width:1px; border-color: red;") # border-radius:50px;
 
         v_layout.addWidget(self.text_area)
 
