@@ -6,7 +6,8 @@ Getting Started:
     Start the application:
         $ python3 ./main.py
 
-
+    Periodically save the venv:
+        $ python3 -m pip freeze > requirements.txt
 
 
 Ideas for Later:
