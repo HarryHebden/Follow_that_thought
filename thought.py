@@ -29,11 +29,9 @@ class Thought(QWidget):
         self.text_area = QTextEdit()
         self.text_area.setBaseSize(300, 300)
         self.text_area.setStyleSheet("background-color: black; border-style: solid; border-width:1px; border-color: red;") # border-radius:50px;
-
         v_layout.addWidget(self.text_area)
 
         self.add_button = QPushButton("+")
-
         v_layout.addWidget(self.add_button)
 
         self.setLayout(v_layout)
@@ -45,7 +43,6 @@ class GraphicsThought(QGraphicsRectItem):
         base_widget = Thought(left, top, height, width)
         base_widget.setGeometry(QRect(left, top, height, width))
 
-        # graphics_widget = QGraphicsRectItem(QRect(0,0,120,145))
         self.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIsMovable | QGraphicsItem.GraphicsItemFlag.ItemIsSelectable)
         self.setBrush(Qt.GlobalColor.red)
 
